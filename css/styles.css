@@ -9,10 +9,21 @@
 html {
   font-size: 62.5%;
 }
+@media screen and (max-width: 398px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media screen and (max-width: 336px) {
+  html {
+    font-size: 48%;
+  }
+}
 
 body {
   font-family: Outfit, sans-serif;
   font-size: 1.8rem;
+  font-weight: 300;
   background-color: hsl(217, 54%, 11%);
   color: hsl(215, 51%, 70%);
   min-height: 100dvh;
@@ -23,10 +34,11 @@ body {
 }
 
 .preview-card {
-  width: 35rem;
+  max-width: 35rem;
   padding: 2.4rem;
   background-color: hsl(216, 50%, 16%);
   border-radius: 1.5rem;
+  margin: 2.4rem;
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
@@ -48,7 +60,7 @@ body {
 .preview-card__title {
   color: hsl(0, 0%, 100%);
   font-size: 2.2rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 1.6rem;
   cursor: pointer;
 }
@@ -69,25 +81,26 @@ body {
   color: hsl(178, 100%, 50%);
   gap: 0.648rem;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 .preview-card__time {
   display: flex;
   align-items: center;
   gap: 0.648rem;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 .preview-card__separator {
   content: "";
   height: 0.1rem;
-  background-color: hsl(215, 51%, 70%);
+  background-color: hsl(215, 32%, 27%);
   border-radius: 1rem;
 }
 .preview-card__footer {
   display: flex;
   align-items: center;
   padding-bottom: 0.8rem;
+  font-weight: 400;
 }
 .preview-card__creator-img {
   width: 3.3rem;

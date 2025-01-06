@@ -23,11 +23,20 @@ $White: hsl(0, 0%, 100%);
 
 html {
   font-size: 62.5%;
+
+  @media screen and (max-width: 398px) {
+    font-size: 55%;
+  }
+
+  @media screen and (max-width: 336px) {
+    font-size: 48%;
+  }
 }
 
 body {
   font-family: Outfit, sans-serif;
   font-size: 1.8rem;
+  font-weight: 300;
   background-color: $Very-dark-blue-main;
   color: $Soft-blue;
 
