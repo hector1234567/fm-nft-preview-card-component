@@ -1,0 +1,81 @@
+.preview-card {
+  width: 35rem;
+  padding: 2.4rem;
+  background-color: $Very-dark-blue-card;
+  border-radius: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  &__image {
+    height: 30.2rem;
+    background-image: url("/images/image-equilibrium.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__title {
+    color: $White;
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 1.6rem;
+  }
+
+  &__text {
+    line-height: 2.6rem;
+  }
+
+  &__data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__eth {
+    display: flex;
+    align-items: center;
+    color: $Cyan;
+    gap: 0.648rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  &__time {
+    display: flex;
+    align-items: center;
+    gap: 0.648rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  &__separator {
+    content: "";
+    height: 0.1rem;
+    background-color: $Soft-blue;
+    border-radius: 1rem;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.8rem;
+  }
+
+  &__creator-img {
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 3.3rem;
+    box-shadow: inset 0 0 0 0.1rem $White;
+
+    background-image: url("/images/image-avatar.png");
+    background-position: center;
+    background-size: cover;
+
+    margin-right: 1.6rem;
+  }
+
+  &__creator-name {
+    color: $White;
+  }
+}

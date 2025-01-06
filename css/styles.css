@@ -1,0 +1,107 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Outfit, sans-serif;
+  font-size: 1.8rem;
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.preview-card {
+  width: 35rem;
+  padding: 2.4rem;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.preview-card__image {
+  height: 30.2rem;
+  background-image: url("/images/image-equilibrium.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.preview-card__title {
+  color: hsl(0, 0%, 100%);
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+.preview-card__text {
+  line-height: 2.6rem;
+}
+.preview-card__data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.preview-card__eth {
+  display: flex;
+  align-items: center;
+  color: hsl(178, 100%, 50%);
+  gap: 0.648rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.preview-card__time {
+  display: flex;
+  align-items: center;
+  gap: 0.648rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.preview-card__separator {
+  content: "";
+  height: 0.1rem;
+  background-color: hsl(215, 51%, 70%);
+  border-radius: 1rem;
+}
+.preview-card__footer {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.8rem;
+}
+.preview-card__creator-img {
+  width: 3.3rem;
+  height: 3.3rem;
+  border-radius: 3.3rem;
+  box-shadow: inset 0 0 0 0.1rem hsl(0, 0%, 100%);
+  background-image: url("/images/image-avatar.png");
+  background-position: center;
+  background-size: cover;
+  margin-right: 1.6rem;
+}
+.preview-card__creator-name {
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*# sourceMappingURL=styles.css.map */
