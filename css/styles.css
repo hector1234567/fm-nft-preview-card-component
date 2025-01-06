@@ -36,12 +36,24 @@ body {
   background-image: url("/images/image-equilibrium.jpg");
   background-position: center;
   background-size: cover;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+.preview-card__image:hover {
+  background-image: url("/images/icon-view.svg"), linear-gradient(rgba(0, 255, 247, 0.503), rgba(0, 255, 247, 0.503)), url("/images/image-equilibrium.jpg");
+  background-position: center, center, center;
+  background-size: 4.4rem, cover, cover;
+  background-repeat: no-repeat;
 }
 .preview-card__title {
   color: hsl(0, 0%, 100%);
   font-size: 2.2rem;
   font-weight: 500;
   margin-bottom: 1.6rem;
+  cursor: pointer;
+}
+.preview-card__title:hover {
+  color: hsl(178, 100%, 50%);
 }
 .preview-card__text {
   line-height: 2.6rem;
